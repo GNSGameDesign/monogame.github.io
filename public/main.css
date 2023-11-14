@@ -1,0 +1,334 @@
+
+[data-bs-theme="light"]
+{
+  --mg-logo: url('/images/monogame_title_light.svg');
+}
+
+[data-bs-theme="dark"]
+{
+  --mg-logo: url('/images/monogame_title_dark.svg');
+}
+
+#logo
+{
+	height: 36px;
+	content: var(--mg-logo);
+}
+
+
+.navbar-nav {
+    --bs-nav-link-hover-color: #e73c00;
+}
+
+button, a 
+{
+  color: #e73c00;
+}
+
+
+article h1 
+{
+  font-size: 40px;
+}
+
+article h2
+{
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+}
+
+.container-xxl 
+{
+	width: 95%;
+	max-width: 1152px;
+}
+
+.wrap-container
+{
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-center
+{
+  text-align: center;
+}
+
+main
+{
+	margin-top: 1rem;
+}
+
+.mg_borderless table,td
+{
+	border-width: 0px;
+	border-style: hidden;
+}
+
+.showcase-feature
+{
+  float:left;
+  width: 25%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--bs-body-bg);
+}
+
+.showcase-feature img
+{
+  width: 100%;
+}
+
+.showcase-feature h4 
+{
+  margin-top: 0.9em;
+}
+
+.showcase-link-image
+{
+  width:333px;
+  height:187px;
+  margin:7px;
+  overflow:hidden;
+  background-size:cover;
+}
+
+#big-image-header
+{
+  background-image: url('/images/showcase-header/fez-screenshot.png');
+  background-position: center;
+  background-origin: center;
+
+  position: relative;
+  height: 512px;
+  margin-bottom: -364px;
+  z-index: -100;
+  transform: scale(2.1);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#big-image-slogan h1
+{
+    text-align: center;
+	color: white;
+	font-size: 3.2em;
+	margin-bottom: 20px;
+	text-shadow: 3px 3px 6px rgba(0,0,0,1);
+	width: 100%;
+}
+
+#big-image-quick-start
+{
+  margin: auto;
+  margin-top: 30px;
+  width: 30%;
+}
+
+#big-image-quick-start a
+{
+  background: #E73C00;
+  color:white;
+  padding:12px 20px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 45px;
+}
+
+#fork-button:after{
+  content: " ";
+  padding:10px 15px;
+  display:inline;
+  background: url('/images/gitty.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20px;
+}
+
+#big-image-title 
+{
+	float: right;
+}
+
+#big-image-title a a:hover 
+{
+	background-color: transparent;
+}
+
+#built-with-monogame, #built-with-monogame:hover 
+{
+    color:white;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: transparent;
+	text-shadow: 2px 2px 6px rgba(0,0,0,1);
+}
+
+footer.border-top
+{
+	border-width: 0px;
+	border-style: hidden;
+}
+
+#timeline {
+  position: relative;
+  display: table;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+#timeline div:after {
+  content: "";
+  width: 2px;
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0rem;
+  left: 60px;
+  z-index: 1;
+  background: #C5C5C5;
+}
+#timeline h3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  color: #888;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+  pointer-events: none;
+}
+#timeline h3:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #C5C5C5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 54px;
+  top: 6px;
+  z-index: 2;
+}
+@media (min-width: 62em) {
+  #timeline h3 {
+    font-size: 1.1em;
+  }
+}
+#timeline section.year {
+  position: relative;
+}
+#timeline section.year section {
+  position: relative;
+  padding-bottom: 0em;
+  margin-top: -1.3em;
+  margin-bottom: 2em;
+}
+#timeline section.year section h4 {
+  position: relative;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0 0 0 89px;
+  color: #C5C5C5;
+  pointer-events: none;
+}
+@media (min-width: 62em) {
+  #timeline section.year section h4 {
+    font-size: 1em;
+  }
+}
+#timeline section.year section ul {
+  padding: 0 0 0 75px;
+  max-width: 64rem;
+  font-size: 1em;
+}
+@media (min-width: 62em) {
+  #timeline section.year section ul {
+    font-size: 1.1em;
+    padding: 0 0 0 81px;
+  }
+}
+#timeline section.year section ul:last-child {
+  margin-bottom: 0;
+}
+
+#timeline section.year section ul li {
+  list-style-type: none;
+  margin-left: 0.5rem;
+}
+#timeline section.year section ul li:before {
+  margin-left: -0.5rem;
+  padding-right: 0.3rem;
+}
+#timeline section.year section ul li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+#timeline section.year section ul li span.price {
+  color: mediumturquoise;
+  font-weight: 500;
+}
+
+.block-features
+{
+  display: grid;
+}
+
+.block-feature
+{
+  float:left;
+  width: 30%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.block-feature h3
+{
+  font-size: 1.4em;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.block-feature h4 
+{
+  font-size: 1.0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.block-feature img 
+{
+  margin-top: 1.4em;
+  width: 75%;
+}
+
+@media screen and (max-width: 768px)
+{
+  .showcase-feature
+  {
+    width:100%;
+  }
+
+  .block-feature
+  {
+    width:100%;
+  }
+}
