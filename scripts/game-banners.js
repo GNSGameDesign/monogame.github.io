@@ -43,15 +43,15 @@ function init_banner()
 
 function random_banner()
 {
-    var featuredBanners = games.filter(function(banner) {
-        return banner.tags.includes('Featured');
-    });
-
     if (shuffled.length <= 1)
     {
+		var featuredBanners = games.filter(function(banner) {
+			return banner.tags.includes('Featured');
+		});
+
         shuffled = shuffled.concat(featuredBanners);
-	shuffled = unique(shuffled);
-	shuffle(shuffled);
+		shuffled = unique(shuffled);
+		shuffle(shuffled);
     }
 
     var title = shuffled[0];
@@ -73,11 +73,11 @@ function random_banner()
 
 function show_banner(title)
 {
-    var headerImage = document.getElementById("big-image-header");
+    var headerImage = document.getElementById("hero-background-image");
     headerImage.style.backgroundImage = "url('" + BannerPath + title.screenshot + "')";
     set_pixel_art(headerImage, title.pixelart);
 
-	var logoImage = document.getElementById("big-image-logo");
+	var logoImage = document.getElementById("credits-logo");
     logoImage.src = BannerPath + title.logo;
     logoImage.parentElement.href = title.url;
 }
